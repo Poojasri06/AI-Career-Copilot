@@ -1,0 +1,4 @@
+QA User
+Experience: 4 years
+Built NLP services using Python, FastAPI, SQL, Docker.
+Projects: job matching and resume optimization tools.
