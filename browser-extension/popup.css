@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: Segoe UI, sans-serif;
+  background: #f6f8fb;
+  color: #13212a;
+}
+
+main {
+  width: 340px;
+  padding: 12px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+p {
+  margin: 6px 0;
+  font-size: 0.85rem;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #bfd0dd;
+  border-radius: 8px;
+  padding: 8px;
+  font-family: Consolas, monospace;
+  font-size: 0.78rem;
+  background: #fff;
+}
+
+button {
+  width: 100%;
+  margin-top: 8px;
+  border: 0;
+  border-radius: 999px;
+  padding: 8px 10px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #13212a;
+  color: #fff;
+}
+
+#status {
+  min-height: 18px;
+  font-weight: 700;
+}
+
+.hint {
+  color: #3f5562;
+}
