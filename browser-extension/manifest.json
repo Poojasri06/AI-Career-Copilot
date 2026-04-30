@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "AI Job Assistant Autofill Helper",
+  "version": "0.1.0",
+  "description": "Field-by-field assisted autofill helper with explicit manual submit confirmation.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": [
+    "https://www.linkedin.com/*",
+    "https://*.indeed.com/*",
+    "https://www.naukri.com/*"
+  ],
+  "action": {
+    "default_title": "AI Autofill Helper",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/*",
+        "https://*.indeed.com/*",
+        "https://www.naukri.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

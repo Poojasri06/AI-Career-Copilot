@@ -25,7 +25,9 @@ app.add_middleware(
 )
 
 # Initialize OpenAI client
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    raise ValueError("OPENAI_API_KEY environment variable is required")
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 class ResumeGenerationRequest(BaseModel):

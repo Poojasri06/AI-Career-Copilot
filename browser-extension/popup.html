@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Autofill Helper</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <h1>AI Autofill Helper</h1>
+      <p>Paste the JSON returned from /api/autofill/prepare.</p>
+      <textarea id="payloadInput" rows="10" placeholder='{"platform":"linkedin","fields":{...}}'></textarea>
+      <button id="loadPayloadBtn">Load Payload Into Page</button>
+      <p>Optional: selector override JSON to tune auto-fill templates without editing code.</p>
+      <textarea id="overrideInput" rows="8" placeholder='{"linkedin":{"cover_letter":["textarea[name*=\"message\" i]"]}}'></textarea>
+      <button id="applyOverrideBtn">Apply Selector Overrides</button>
+      <p id="status" aria-live="polite"></p>
+      <hr />
+      <p class="hint">
+        In the target application page, use <strong>Auto Fill Common Fields</strong> first, then <strong>Fill Next Field</strong> for leftovers.
+      </p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
