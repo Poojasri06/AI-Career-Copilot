@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+sqlalchemy
+asyncpg
+psycopg2
+alembic
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+python-dotenv
+groq
+pdfplumber
+python-docx
+pydantic
+pydantic-settings
+openai
